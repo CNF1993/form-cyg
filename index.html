@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de satisfacción</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class="styles" action="/gracias.html" method="get" id="survey-form">
+    <h1 id="title">Ayudanos a mejorar</h1>
+    <p id="description">¡Tu opinión nos importa!</p>
+        <fieldset>
+            <label for="name" id="name-label">Nombre <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required></label>
+            <label for="email" id="email-label">Email <input type="email" name="email" id="email" placeholder="Ingresa tu email" required></label>
+            <label for="number" id="number-label">Edad (opcional) <input type="number" name="number" id="number" min="13" max="120" placeholder="Edad"></label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">¿Cómo nos conociste?
+                <select name="dropdown" id="dropdown" required>
+                    <option value="">Seleccioná una opción</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="mercadolibre">Mercadolibre</option>
+                    <option value="feria">En la feria</option>
+                    <option value="recomendacion">Por recomendación</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="recomendacion">¿Recomendarías nuestros productos?
+                <label for="recomendacion-1"><input type="radio" name="recomendacion" id="recomendacion-1" value="definitivamente" checked> Definitivamente</label>
+                <label for="recomendacion-2"><input type="radio" name="recomendacion" id="recomendacion-2" value="puede-ser"> Puede ser</label>
+                <label for="recomendacion-3"><input type="radio" name="recomendacion" id="recomendacion-3" value="no-se"> No sé</label>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="mejoras" id="justificar">Contanos que te parece que podemos mejorar (seleccioná todas las que creas que correspondan)
+                <label for="atencion"><input type="checkbox" name="atencion" id="atencion" value="atencion">Nuestra atención</label>
+                <label for="promociones"><input type="checkbox" name="promociones" id="promociones" value="promociones">Promociones y descuentos</label>
+                <label for="cantidad"><input type="checkbox" name="cantidad" id="cantidad" value="cantidad">Cantidad de productos</label>
+                <label for="calidad"><input type="checkbox" name="calidad" id="calidad" value="calidad">Calidad de nuestros productos</label>
+                <label for="tiempo-entrega"><input type="checkbox" name="tiempo-entrega" id="tiempo-entrega" value="tiempo-entrega">Tiempos de entrega</label>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="text-area">¿Algún comentario o sugerencia?
+                <textarea name="text-area" id="text-area" cols="50" rows="10" placeholder="Tu opinión nos importa..."></textarea>
+            </label>
+        </fieldset>
+        <label for="submit">
+            <button name="submit" id="submit">Enviar</button>
+        </label>
+    </form>
+</body>
+</html>
