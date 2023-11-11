@@ -67,7 +67,13 @@ button {
     border: 2px solid #ffffff9c;
     color: #5f5f5fd7;
     min-width: 250px;
+    cursor: pointer;
     }
+
+button:hover {
+    background-color: #5f5f5fd7;
+    color: #f8e8cbd2;
+}
 
 
 fieldset {
